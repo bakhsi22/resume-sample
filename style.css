@@ -1,0 +1,369 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+body
+{
+    font-family: monospace;
+    
+}
+.row
+{
+    max-width: 1200px;
+    margin: auto;
+}
+
+.main-nav
+{
+    float: right;
+    list-style: none;
+    margin-top: 30px;
+}
+.main-nav li
+{
+    display: inline-block;
+}
+
+.main-nav li.active a
+{
+    border: 1px green;
+    
+}
+
+.main-nav li a:hover
+{
+    border-bottom: 3px solid green;
+}
+
+.mainnav li a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  border-bottom: 3px solid transparent;
+}
+.main-nav li a
+{
+    color: white;
+    text-decoration: none;
+    padding: 5px 20px;
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+}
+
+h1
+{
+    color: white;
+    text-transform: uppercase;
+    font-size: 70px;
+    text-align: center;
+    margin-top: 275px;
+    
+}
+<!--
+header
+{
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(pic1.jpg);
+    height: 100vh;
+     background-repeat: no-repeat;
+     background-size: 100% 100%;
+    background-position: center;
+}--> 
+.hero
+{
+    text-align: initial;
+    margin-top: 30px;
+    margin-left: 40px;
+}
+.button
+{
+    margin-top: 350px;
+    margin-left: 440px;
+}
+
+.btn
+{
+    border: 1px solid white;
+    padding: 10px 30px;
+    color: white;
+    text-decoration: none;
+    margin-right: 5px;
+    font-size: 13px;
+    text-transform: uppercase;
+}
+.btn-one
+{
+    background-color: darkorange;
+    font-family: "Roboto", sans-serif;
+}
+
+.btn-two
+{
+    font-family: "Roboto", sans-serif;
+}
+
+
+.btn-two:hover
+{
+    background-color: darkorange;
+    transition: all 0.5s ease-in;
+    
+        
+}
+
+
+
+.wrap
+{
+width: 50%;
+margin-right: 20px;
+text-align: right;
+}
+.icon{
+width: 45px;
+  height: 5px;
+
+  background-color: white;
+  margin: 6px 0;
+}
+
+<!--
+.popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+
+.popup .popuptext {
+    visibility: hidden;
+    width: 160px;
+    background-color: rgb(241, 229, 229);
+    color: rgb(184, 63, 63);
+    text-align: center;
+    border-radius: 20px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: 10px;
+}
+
+.popup .popuptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+.popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s
+}
+
+
+  .overlay {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 2;
+    cursor: pointer;
+  }
+  
+  .text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 90px;
+    color: rgb(230, 46, 46);
+    
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+  }
+   
+  .card {
+    /* box-shadow: 0 4px 8px 0 rgba(233, 106, 106, 0.2); */
+    max-width: 300px;
+    max-height: 300px;
+    margin: auto;
+    text-align: center;
+  }
+  
+  .title {
+    text-align: center; 
+    color: rgb(0, 0, 0);
+    font-size: 22px;
+    background-color: rgb(238, 230, 230);
+  }
+  .uni {
+    text-align: center; 
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    background-color: rgb(238, 230, 230);
+  }
+  
+  button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: rgb(236, 26, 26);
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+  }
+  
+  a1 {
+    text-decoration: none;
+    font-size: 30px;
+    background-color: rgb(238, 230, 230);
+    color: rgb(243, 28, 28);
+  }
+  
+  .button:hover, a:hover {
+    opacity: 0.7;
+  }
+
+  .w3-teal, .w3-hover-teal:hover {
+    color: #fff;
+    /* background-color: #26ddcb; */
+    margin-left: 0px;
+    margin-right: 0px;
+    /* margin-top: 556px; */
+    font-size: large;
+    margin-top: 0x;
+}
+
+.w3-text-grey, .w3-hover-text-grey:hover, .w3-text-gray, .w3-hover-text-gray:hover {
+    color: black;
+    font-weight: initial;
+}
+img {
+    vertical-align: middle;
+    align-self: center;
+}
+.w3-row-padding, .w3-row-padding>.w3-half, .w3-row-padding>.w3-third, .w3-row-padding>.w3-twothird, .w3-row-padding>.w3-threequarter, .w3-row-padding>.w3-quarter, .w3-row-padding>.w3-col {
+    
+    background: white;
+   
+        /* margin-block-start: initial; */
+        margin-bottom: 20px;
+        padding: 25px 14px;
+        margin-top: 80px;
+        padding: 0px 25px;
+}
+.w3-light-grey, .w3-hover-light-grey:hover, .w3-light-gray, .w3-hover-light-gray:hover {
+    color: #000;
+    
+}
+w3-text-black, .w3-hover-text-black:hover {
+    font-family: sans-serif;
+    color: #000;
+    font-weight: 7;
+}
+element.style {
+    max-width: 800px;
+    background: white;
+    margin-top: 200px;
+    /* padding: 100px; */
+    clear: BOTH;
+    float: none;
+}
+.fa-instagram:before {
+    content: "\f16d";
+    padding: 50;
+}
+.fa-pinterest-p:before {
+    content: "\f231";
+    padding: 50;
+}
+.fa-linkedin:before {
+    content: "\f0e1";
+    padding: 50;
+}
+/* For better visibility of the example */
+body {
+    margin: 60px 150px;
+    background-color: #cccccc;
+  }
+  
+  /* Message box starts here */
+  .container {
+    clear: both;
+    position: relative;
+  }
+  
+  .container .arrow {
+    width: 10px;
+    height: 20px;
+    overflow: hidden;
+    position: relative;
+    float: left;
+    top: 6px;
+    right: -1px;
+  }
+  
+  .container .arrow .outer {
+    width: 0;
+    height: 0;
+    border-right: 20px solid #52e65e;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  .container .arrow .inner {
+    width: 0;
+    height: 0;
+    border-right: 20px solid #52e65e;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    position: absolute;
+    top: 0;
+    left: 2px;
+  }
+  
+  .container .message-body {
+    float: left;
+    width: 60px;
+    height: auto;
+    border: 1px solid #CCC;
+    background-color: #52e65e;
+    
+    padding: 6px 6px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+  }
+  
+  .container .message-body p {
+    margin: 0;
+  }
+  
+  
+  
+  
+  
+  
